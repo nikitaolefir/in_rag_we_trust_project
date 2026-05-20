@@ -4,9 +4,8 @@ PROJECT_ROOT = Path(__file__).parent
 DATA_DIR = PROJECT_ROOT / "data"
 RESULTS_DIR = PROJECT_ROOT / "results"
 CACHE_DIR = DATA_DIR / "llm_cache"
-INDEX_DIR = DATA_DIR / "faiss_index"
 
-for d in (DATA_DIR, RESULTS_DIR, CACHE_DIR, INDEX_DIR):
+for d in (DATA_DIR, RESULTS_DIR, CACHE_DIR):
     d.mkdir(parents=True, exist_ok=True)
 
 N_QUESTIONS = 100
